@@ -31,11 +31,15 @@ android {
 //        }
 //    }
 
+    // Encapsulates your external native build configurations.
     externalNativeBuild {
-        ndkBuild {
-            path '../jni/Android.mk'
+        // Encapsulates your CMake build configurations.
+        cmake {
+            // Provides a relative path to your CMake build script.
+            path "src/main/cpp/CMakeLists.txt"
         }
     }
+
 }
 
 dependencies {
