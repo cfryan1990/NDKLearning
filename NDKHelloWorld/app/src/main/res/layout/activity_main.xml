@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cfryan.ndkhelloworld.MainActivity">
+
+    <Button
+        android:id="@+id/sample_text_static1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JNI静态注册，实例方法"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@+id/sample_text_static2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sample_text_static2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JNI静态注册，静态方法"
+        app:layout_constraintBottom_toTopOf="@+id/sample_text_dynamic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text_static1" />
+
+    <Button
+        android:id="@+id/sample_text_dynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JNI动态注册，不带参数"
+        app:layout_constraintBottom_toTopOf="@+id/sample_text_dynamic_param"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text_static2" />
+
+    <Button
+        android:id="@+id/sample_text_dynamic_param"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JNI动态注册，带参数"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text_dynamic" />
+</android.support.constraint.ConstraintLayout>
